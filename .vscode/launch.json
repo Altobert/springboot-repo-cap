@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Practica3JpaSimpleApplication<Practica3JpaSimple>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "cl.practica3.app.Practica3JpaSimpleApplication",
+            "projectName": "Practica3JpaSimple",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
