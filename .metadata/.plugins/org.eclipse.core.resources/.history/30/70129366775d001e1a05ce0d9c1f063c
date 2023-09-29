@@ -1,0 +1,6 @@
+package cl.practica3.app.services;
+
+public interface IArticuloService {
+
+	List<Articulo> findAll();
+}

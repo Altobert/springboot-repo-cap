@@ -1,0 +1,9 @@
+package cl.practica2.app.controller;
+
+import org.springframework.stereotype.Controller;
+
+//@RestController, cuando mi aplicacion sera rest
+@Controller
+public class HomeController {
+
+}

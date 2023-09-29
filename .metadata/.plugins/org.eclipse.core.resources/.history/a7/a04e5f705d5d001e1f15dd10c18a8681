@@ -1,0 +1,15 @@
+package cl.practica2.app.controller;
+
+import org.springframework.stereotype.Controller;
+
+//@RestController, cuando mi aplicacion sera rest
+@Controller // para que mi applicacion tenga el super poder de controlador, que redirecciones.
+//controlador para aplicaciones web
+
+public class HomeController {
+	
+	public String inicio() {
+		return "";
+	}
+
+}

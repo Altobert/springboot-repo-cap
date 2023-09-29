@@ -1,0 +1,5 @@
+package cl.practica2.app.controller;
+
+public class HomeController {
+
+}

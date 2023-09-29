@@ -1,0 +1,24 @@
+package cl.practica3.app.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import cl.practica3.app.entities.Articulo;
+import cl.practica3.app.repository.IArticuloRepository;
+
+//Clase de servicio, logica de negocio, transacciones
+@Service
+public class ArticuloServiceImpl implements IArticuloService{
+
+	@Autowired
+	private IArticuloRepository articuloRepository;
+	
+	@Override
+	public List<Articulo> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

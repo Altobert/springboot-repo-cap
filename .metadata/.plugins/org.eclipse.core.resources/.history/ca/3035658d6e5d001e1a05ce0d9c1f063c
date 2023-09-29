@@ -1,0 +1,5 @@
+package cl.practica3.app.entities;
+
+public class Articulo {
+
+}

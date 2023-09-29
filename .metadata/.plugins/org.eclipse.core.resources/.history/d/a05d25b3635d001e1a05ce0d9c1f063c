@@ -1,0 +1,5 @@
+package cl.practica2.app.entities;
+
+public class Alumno {
+
+}

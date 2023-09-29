@@ -1,0 +1,29 @@
+package cl.practica2.app.entities;
+
+//En elgun momento lo daremos el super poder de ser persistido
+// clase pojo, plana, anemica
+public class Alumno {
+	
+	private String nombre;
+	private Integer edad;
+	private String fechaNacimiento;
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public Integer getEdad() {
+		return edad;
+	}
+	public void setEdad(Integer edad) {
+		this.edad = edad;
+	}
+	public String getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+	public void setFechaNacimiento(String fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+}

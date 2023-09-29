@@ -1,0 +1,16 @@
+package cl.practica2.app.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HomeController {
+	
+	@GetMapping("/")
+	public String inicio() {
+		//crear alumno 
+		//llevar a alumno a la pagina web
+		return "inicio";
+	}
+
+}
