@@ -2705,3 +2705,48 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:20:25.798
 !MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:45:49.033
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:45:49.035
+!MESSAGE Boot project ADDED: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:45:57.128
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:45:58.760
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:50:04.658
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:50:52.474
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:51:26.961
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:55:50.451
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:56:05.678
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:56:34.350
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:57:18.576
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:59:19.249
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 18:00:25.402
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 18:00:46.809
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 18:00:50.426
+!MESSAGE Classpath changed for project: Practica5CrudWeb
