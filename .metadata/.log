@@ -2093,3 +2093,615 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-10-02 09:16:38.139
+!MESSAGE org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Se está cerrando la canalización
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Se está cerrando la canalización
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:446)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Se está cerrando la canalización
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:282)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy11/jdk.proxy11.$Proxy33.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:444)
+	... 7 more
+Caused by: java.io.IOException: Se está cerrando la canalización
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-02 09:16:38.154
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Ambientes/Sts-LearnSpring/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1696248998032
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 09:16:38.157
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 09:16:38.182
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-02 09:16:38.184
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 3432
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-02 09:16:38.207
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 23660
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-10-02 09:16:38.213
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-02 09:16:42.208
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2023-10-02 14:36:00.677 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CL
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-02 14:36:02.057
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2023-10-02 14:36:07.376
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:607)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-02 14:36:07.862
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-02 14:36:07.862
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-02 14:36:21.794
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Ambientes/Sts-LearnSpring/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1696268181792
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:21.796
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-02 14:36:21.856
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 22496
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-10-02 14:36:21.895
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-02 14:36:24.877
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alberto.sanmartin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.308
+!MESSAGE Boot project ADDED: Practica2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.310
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.313
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.341
+!MESSAGE Boot project ADDED: Practica2-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.343
+!MESSAGE Boot project ADDED: Practica3JpaSimple
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.345
+!MESSAGE Boot project ADDED: beanPostProcessor-and-beanFactoryPostProcessor-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.373
+!MESSAGE Boot project ADDED: beanPostProcessor-and-beanFactoryPostProcessor-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.393
+!MESSAGE Boot project ADDED: debugging-and-solving-wiring-exceptions-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.402
+!MESSAGE Boot project ADDED: debugging-and-solving-wiring-exceptions-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.428
+!MESSAGE Boot project ADDED: m2-basics-of-java-configuration-and-the-spring-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.453
+!MESSAGE Boot project ADDED: m2-basics-of-java-configuration-and-the-spring-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.514
+!MESSAGE Boot project ADDED: m2-defining-beans-component-scanning-and-bean-annotations-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.523
+!MESSAGE Boot project ADDED: m2-defining-beans-component-scanning-and-bean-annotations-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.529
+!MESSAGE Boot project ADDED: m2-lifecycle-of-a-bean-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.537
+!MESSAGE Boot project ADDED: m2-lifecycle-of-a-bean-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.545
+!MESSAGE Boot project ADDED: m2-simple-wiring-and-injection-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.553
+!MESSAGE Boot project ADDED: m2-simple-wiring-and-injection-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.613
+!MESSAGE Boot project ADDED: scopes-of-spring-beans-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.624
+!MESSAGE Boot project ADDED: scopes-of-spring-beans-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.670
+!MESSAGE Boot project ADDED: spring-wiring-resource-and-inject-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.677
+!MESSAGE Boot project ADDED: spring-wiring-resource-and-inject-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.693
+!MESSAGE Boot project ADDED: the-spring-application-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:36:25.718
+!MESSAGE Boot project ADDED: the-spring-application-context-start
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-02 14:38:48.434
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:38:56.969
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:38:56.971
+!MESSAGE Boot project ADDED: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:02.719
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:09.653
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:12.120
+!MESSAGE Classpath changed for project: Practica2
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-02 14:39:14.507
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:15.590
+!MESSAGE Classpath changed for project: Practica2-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:18.839
+!MESSAGE Classpath changed for project: Practica3JpaSimple
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:20.938
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:22.452
+!MESSAGE Classpath changed for project: beanPostProcessor-and-beanFactoryPostProcessor-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:28.488
+!MESSAGE Classpath changed for project: beanPostProcessor-and-beanFactoryPostProcessor-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:30.089
+!MESSAGE Classpath changed for project: debugging-and-solving-wiring-exceptions-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:34.533
+!MESSAGE Classpath changed for project: debugging-and-solving-wiring-exceptions-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:36.176
+!MESSAGE Classpath changed for project: m2-basics-of-java-configuration-and-the-spring-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:43.590
+!MESSAGE Classpath changed for project: m2-basics-of-java-configuration-and-the-spring-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:45.743
+!MESSAGE Classpath changed for project: m2-defining-beans-component-scanning-and-bean-annotations-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:47.369
+!MESSAGE Classpath changed for project: m2-defining-beans-component-scanning-and-bean-annotations-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:47.371
+!MESSAGE Classpath changed for project: m2-lifecycle-of-a-bean-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:49.438
+!MESSAGE Classpath changed for project: m2-lifecycle-of-a-bean-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:50.989
+!MESSAGE Classpath changed for project: m2-simple-wiring-and-injection-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:52.813
+!MESSAGE Classpath changed for project: m2-simple-wiring-and-injection-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:54.507
+!MESSAGE Classpath changed for project: scopes-of-spring-beans-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:56.614
+!MESSAGE Classpath changed for project: scopes-of-spring-beans-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:39:58.239
+!MESSAGE Classpath changed for project: spring-wiring-resource-and-inject-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:40:00.383
+!MESSAGE Classpath changed for project: spring-wiring-resource-and-inject-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:40:00.384
+!MESSAGE Classpath changed for project: the-spring-application-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:40:02.305
+!MESSAGE Classpath changed for project: the-spring-application-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:41:12.604
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:42:35.747
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.eclipse.jface 2 0 2023-10-02 14:43:17.767
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-02 14:43:17.767
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:45:40.343
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:46:18.830
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:48:08.566
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:48:39.618
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:48:58.894
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:56:57.163
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:57:01.679
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:58:40.683
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:59:15.403
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 14:59:30.076
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:01:43.891
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:02:10.636
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:02:53.962
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:09:29.786
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:09:31.163
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-02 15:09:44.702
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:10:06.344
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:10:46.428
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:11:09.430
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:12:07.001
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:15:18.716
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:16:09.628
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:16:46.432
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:17:10.955
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:22:38.594
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:22:41.003
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:24:58.097
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:26:04.697
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:27:02.001
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:27:17.194
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:27:32.366
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:34:32.473
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:36:06.224
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:40:47.905
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:44:18.934
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:46:04.060
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:46:05.566
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:54:20.333
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:54:33.979
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:54:43.439
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:55:43.026
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:56:06.473
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:57:24.056
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:59:15.305
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 15:59:33.348
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:03:00.417
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:53:17.816
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:53:18.000
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:53:18.917
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:53:22.721
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:56:14.780
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:56:44.734
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:56:47.253
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:57:27.353
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:57:28.864
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:59:36.273
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:59:41.619
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 16:59:42.879
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:03:06.756
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:04:34.253
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:07:47.268
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:14:24.099
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-02 17:20:25.798
+!MESSAGE Classpath changed for project: PracticaRestService
