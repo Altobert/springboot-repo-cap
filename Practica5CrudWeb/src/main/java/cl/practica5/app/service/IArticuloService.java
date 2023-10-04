@@ -12,6 +12,6 @@ public interface IArticuloService {
 	
 	public Articulo save(Articulo articulo);
 	
-	public void delete();
+	public void delete(Integer id);
 	
 }
