@@ -15,6 +15,7 @@ import cl.practica5.app.repository.IArticuloRepository;
 
 //Service implementa un sigleton
 //Solamente puede haber una instancia de esta aplicacion.
+//Esto es backend, aca no van respuestas 
 @Service
 public class ArticuloServiceImpl implements IArticuloService {
 	

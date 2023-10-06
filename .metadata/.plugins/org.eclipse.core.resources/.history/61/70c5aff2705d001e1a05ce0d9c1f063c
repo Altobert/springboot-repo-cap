@@ -1,5 +1,0 @@
-package cl.practica3.app.repository;
-
-public interface IArticuloRepository {
-
-}
