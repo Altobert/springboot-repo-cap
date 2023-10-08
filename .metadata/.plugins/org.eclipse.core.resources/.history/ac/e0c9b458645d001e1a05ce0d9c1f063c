@@ -1,7 +1,0 @@
-package cl.practica2.app.entities;
-
-//En elgun momento lo daremos el super poder de ser persistido
-//
-public class Alumno {
-
-}

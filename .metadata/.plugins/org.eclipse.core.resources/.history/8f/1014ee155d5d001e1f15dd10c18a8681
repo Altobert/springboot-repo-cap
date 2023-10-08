@@ -1,6 +1,0 @@
-package cl.practica2.app.controller;
-
-@Controller
-public class HomeController {
-
-}

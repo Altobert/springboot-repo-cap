@@ -1,8 +1,0 @@
-package cl.practica3.app.services;
-
-import java.util.List;
-
-public interface IArticuloService {
-
-	List<Articulo> findAll();
-}
