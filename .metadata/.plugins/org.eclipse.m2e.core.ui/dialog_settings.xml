@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Ambientes\Arsii-Node-V18\proyectos-vue\proyecto-eol\visor-eol\backend\visor-eol-ms"/>
 			<item value="D:\Ambientes\Sts-LearnSpring\jpa-demo-CRUD-REPOSITORY"/>
 		</list>
 		<list key="projectNameTemplate">
