@@ -5655,3 +5655,833 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-12 12:21:20.269
 !MESSAGE Boot project ADDED: the-spring-application-context-start
+!SESSION 2023-10-13 14:01:19.830 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CL
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-13 14:01:20.937
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2023-10-13 14:01:25.336
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:607)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-13 14:01:25.767
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-13 14:01:25.767
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-13 14:01:40.678
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Ambientes/Sts-LearnSpring/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1697216500675
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:40.680
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-13 14:01:40.780
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19752
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-10-13 14:01:40.823
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-13 14:01:42.953
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alberto.sanmartin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.095
+!MESSAGE Boot project ADDED: Practica2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.098
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.101
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.176
+!MESSAGE Boot project ADDED: Practica2-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.178
+!MESSAGE Boot project ADDED: Practica3JpaSimple
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.265
+!MESSAGE Boot project ADDED: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.292
+!MESSAGE Boot project ADDED: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.346
+!MESSAGE Boot project ADDED: PracticaSeis-AppSeguridad
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.348
+!MESSAGE Boot project ADDED: beanPostProcessor-and-beanFactoryPostProcessor-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.371
+!MESSAGE Boot project ADDED: beanPostProcessor-and-beanFactoryPostProcessor-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.403
+!MESSAGE Boot project ADDED: debugging-and-solving-wiring-exceptions-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.470
+!MESSAGE Boot project ADDED: debugging-and-solving-wiring-exceptions-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.472
+!MESSAGE Boot project ADDED: jpa-demo-CRUD-REPOSITORY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.512
+!MESSAGE Boot project ADDED: jpa-demo-JPA-REPOSITORY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.515
+!MESSAGE Boot project ADDED: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.567
+!MESSAGE Boot project ADDED: m2-basics-of-java-configuration-and-the-spring-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.590
+!MESSAGE Boot project ADDED: m2-basics-of-java-configuration-and-the-spring-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.636
+!MESSAGE Boot project ADDED: m2-defining-beans-component-scanning-and-bean-annotations-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.661
+!MESSAGE Boot project ADDED: m2-defining-beans-component-scanning-and-bean-annotations-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.697
+!MESSAGE Boot project ADDED: m2-lifecycle-of-a-bean-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.735
+!MESSAGE Boot project ADDED: m2-lifecycle-of-a-bean-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.782
+!MESSAGE Boot project ADDED: m2-simple-wiring-and-injection-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.812
+!MESSAGE Boot project ADDED: m2-simple-wiring-and-injection-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.833
+!MESSAGE Boot project ADDED: scopes-of-spring-beans-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.864
+!MESSAGE Boot project ADDED: scopes-of-spring-beans-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.922
+!MESSAGE Boot project ADDED: spring-wiring-resource-and-inject-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.940
+!MESSAGE Boot project ADDED: spring-wiring-resource-and-inject-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.963
+!MESSAGE Boot project ADDED: the-spring-application-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:01:43.986
+!MESSAGE Boot project ADDED: the-spring-application-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:23.201
+!MESSAGE Classpath changed for project: Practica2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:30.505
+!MESSAGE Classpath changed for project: Practica2-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:34.496
+!MESSAGE Classpath changed for project: Practica3JpaSimple
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:38.543
+!MESSAGE Classpath changed for project: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:42.443
+!MESSAGE Classpath changed for project: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:44.503
+!MESSAGE Classpath changed for project: PracticaSeis-AppSeguridad
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:46.118
+!MESSAGE Classpath changed for project: PracticaSeis-AppSeguridad
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:19:56.922
+!MESSAGE Classpath changed for project: beanPostProcessor-and-beanFactoryPostProcessor-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:02.042
+!MESSAGE Classpath changed for project: beanPostProcessor-and-beanFactoryPostProcessor-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:03.588
+!MESSAGE Classpath changed for project: debugging-and-solving-wiring-exceptions-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:08.298
+!MESSAGE Classpath changed for project: debugging-and-solving-wiring-exceptions-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:09.909
+!MESSAGE Classpath changed for project: jpa-demo-CRUD-REPOSITORY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:11.939
+!MESSAGE Classpath changed for project: jpa-demo-JPA-REPOSITORY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:14.070
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:15.569
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:19.069
+!MESSAGE Classpath changed for project: m2-basics-of-java-configuration-and-the-spring-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:23.657
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:23.661
+!MESSAGE Classpath changed for project: m2-basics-of-java-configuration-and-the-spring-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:25.212
+!MESSAGE Classpath changed for project: m2-basics-of-java-configuration-and-the-spring-context-start
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-10-13 14:20:25.785
+!MESSAGE Marker id 5337 not found.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/m2-basics-of-java-configuration-and-the-spring-context-start/pom.xml)[376]: java.lang.IllegalStateException
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.getAttributes(Marker.java:163)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.updateMarker(LSPDiagnosticsToMarkers.java:195)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers$1.runInWorkspace(LSPDiagnosticsToMarkers.java:170)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2023-10-13 14:20:25.785
+!MESSAGE Marker id 5337 not found.
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.getAttributes(Marker.java:163)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.updateMarker(LSPDiagnosticsToMarkers.java:195)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers$1.runInWorkspace(LSPDiagnosticsToMarkers.java:170)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:26.930
+!MESSAGE Classpath changed for project: m2-defining-beans-component-scanning-and-bean-annotations-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:29.036
+!MESSAGE Classpath changed for project: m2-defining-beans-component-scanning-and-bean-annotations-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:31.148
+!MESSAGE Classpath changed for project: m2-lifecycle-of-a-bean-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:32.718
+!MESSAGE Classpath changed for project: m2-lifecycle-of-a-bean-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:34.240
+!MESSAGE Classpath changed for project: m2-simple-wiring-and-injection-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:36.449
+!MESSAGE Classpath changed for project: m2-simple-wiring-and-injection-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:37.891
+!MESSAGE Classpath changed for project: scopes-of-spring-beans-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:39.922
+!MESSAGE Classpath changed for project: scopes-of-spring-beans-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:41.975
+!MESSAGE Classpath changed for project: spring-wiring-resource-and-inject-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:44.062
+!MESSAGE Classpath changed for project: spring-wiring-resource-and-inject-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:45.708
+!MESSAGE Classpath changed for project: the-spring-application-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:45.710
+!MESSAGE Classpath changed for project: the-spring-application-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:20:54.125
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:22:07.431
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+!SESSION 2023-10-13 14:24:03.333 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CL
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data file:/D:/Ambientes/Sts-LearnSpring/ -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-13 14:24:04.709
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2023-10-13 14:24:10.202
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:607)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-13 14:24:10.680
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-13 14:24:10.680
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-13 14:24:24.897
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Eclipse-STS\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Ambientes/Sts-LearnSpring/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1697217864896
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:24.900
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-13 14:24:24.978
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 27916
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-10-13 14:24:25.019
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-13 14:24:27.111
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alberto.sanmartin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.421
+!MESSAGE Boot project ADDED: Practica2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.425
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.430
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.494
+!MESSAGE Boot project ADDED: Practica2-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.500
+!MESSAGE Boot project ADDED: Practica3JpaSimple
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.538
+!MESSAGE Boot project ADDED: Practica5CrudWeb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.571
+!MESSAGE Boot project ADDED: PracticaRestService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.618
+!MESSAGE Boot project ADDED: PracticaSeis-AppSeguridad
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.620
+!MESSAGE Boot project ADDED: beanPostProcessor-and-beanFactoryPostProcessor-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.643
+!MESSAGE Boot project ADDED: beanPostProcessor-and-beanFactoryPostProcessor-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.688
+!MESSAGE Boot project ADDED: debugging-and-solving-wiring-exceptions-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.725
+!MESSAGE Boot project ADDED: debugging-and-solving-wiring-exceptions-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.727
+!MESSAGE Boot project ADDED: jpa-demo-CRUD-REPOSITORY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.761
+!MESSAGE Boot project ADDED: jpa-demo-JPA-REPOSITORY
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.763
+!MESSAGE Boot project ADDED: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.806
+!MESSAGE Boot project ADDED: m2-basics-of-java-configuration-and-the-spring-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.829
+!MESSAGE Boot project ADDED: m2-basics-of-java-configuration-and-the-spring-context-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.869
+!MESSAGE Boot project ADDED: m2-defining-beans-component-scanning-and-bean-annotations-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.888
+!MESSAGE Boot project ADDED: m2-defining-beans-component-scanning-and-bean-annotations-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.919
+!MESSAGE Boot project ADDED: m2-lifecycle-of-a-bean-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:27.956
+!MESSAGE Boot project ADDED: m2-lifecycle-of-a-bean-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.021
+!MESSAGE Boot project ADDED: m2-simple-wiring-and-injection-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.057
+!MESSAGE Boot project ADDED: m2-simple-wiring-and-injection-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.089
+!MESSAGE Boot project ADDED: scopes-of-spring-beans-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.127
+!MESSAGE Boot project ADDED: scopes-of-spring-beans-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.178
+!MESSAGE Boot project ADDED: spring-wiring-resource-and-inject-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.223
+!MESSAGE Boot project ADDED: spring-wiring-resource-and-inject-start
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.301
+!MESSAGE Boot project ADDED: the-spring-application-context-end
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:24:28.334
+!MESSAGE Boot project ADDED: the-spring-application-context-start
+
+!ENTRY org.eclipse.jface 2 0 2023-10-13 14:26:46.381
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-13 14:26:46.381
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-13 14:28:41.083
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-13 14:28:41.083
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.debug.ui.commands.RunToLine"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.springframework.ide.eclipse.boot.restart.commands.restart"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:29:28.975
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:30:10.636
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:31:24.743
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:34:04.954
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:36:28.591
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-13 14:37:08.226
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:38:31.582
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:39:07.965
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:39:23.579
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:40:41.340
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:43:46.128
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:44:10.913
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:45:23.759
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:45:29.010
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:45:29.012
+!MESSAGE Boot project ADDED: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:45:30.440
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:53:44.247
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:55:32.659
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:57:38.610
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:58:09.817
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:58:11.126
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:59:18.532
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 14:59:40.798
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:11:26.712
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-13 15:11:35.706
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:11:39.043
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:11:44.936
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:13:29.058
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:15:13.652
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:15:35.680
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:16:09.046
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:16:47.734
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:17:12.072
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:17:47.153
+!MESSAGE Classpath changed for project: jpa-demo-Relaciones
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:28:39.005
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:29:06.281
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:30:19.971
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2023-10-13 15:30:25.355
+!MESSAGE Disconnected before saving. Please post stacktrace to https://bugs.eclipse.org/bugs/show_bug.cgi?id=569286 org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor JpaDemoApplication.java
+!STACK 0
+java.lang.IllegalStateException: Disconnected before saving. Please post stacktrace to https://bugs.eclipse.org/bugs/show_bug.cgi?id=569286 org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor JpaDemoApplication.java
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.disconnectEditor(AbstractTextEditor.java:7148)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.dispose(AbstractTextEditor.java:4329)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.dispose(AbstractDecoratedTextEditor.java:383)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.dispose(JavaEditor.java:2668)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.dispose(CompilationUnitEditor.java:1517)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:264)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:987)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:952)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:193)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:177)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:103)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:487)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:947)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1404)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1334)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.close(StackRenderer.java:1177)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1970)
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:337)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	Suppressed: java.lang.IllegalStateException: isDirty check after disconnect
+		at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.isDirty(AbstractTextEditor.java:7197)
+		at org.eclipse.ui.internal.Workbench.getFilteredSaveables(Workbench.java:3431)
+		at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3404)
+		at org.eclipse.ui.ide.IDE$1.run(IDE.java:1458)
+		at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+		at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1446)
+		at org.eclipse.debug.internal.ui.launchConfigurations.SaveScopeResourcesHandler.doSave(SaveScopeResourcesHandler.java:228)
+		at org.eclipse.debug.internal.ui.launchConfigurations.SaveScopeResourcesHandler.handleStatus(SaveScopeResourcesHandler.java:182)
+		at org.eclipse.debug.internal.ui.sourcelookup.Prompter.lambda$0(Prompter.java:73)
+		at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+		at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+		at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+		at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+		at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+		at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+		... 21 more
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:30:25.676
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:32:12.758
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:35:06.077
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:36:15.901
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:37:50.619
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:38:01.317
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:38:56.823
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-13 15:39:20.749
+!MESSAGE Classpath changed for project: jpa-demo-QueryMethods

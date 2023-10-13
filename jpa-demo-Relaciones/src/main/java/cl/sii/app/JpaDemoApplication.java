@@ -56,7 +56,9 @@ public class JpaDemoApplication implements CommandLineRunner{
 		
 		//crearPerfilesApp();
 		
-		crearUsuarioConDosPerfiles();
+		//crearUsuarioConDosPerfiles();
+		
+		buscarUsuario();
 		
 		/*guardarTodas();
 		guardar();
@@ -339,21 +341,46 @@ public class JpaDemoApplication implements CommandLineRunner{
 		return listPerfiles;
 	}
 	
+	private void buscarUsuario() {
+		
+		Optional<Usuario> opUsuario =  usuarioRepo.findById(1);
+		
+		if(opUsuario.isPresent()) {
+			
+			Usuario usuario = opUsuario.get();
+			System.out.println("Nombre: "+usuario.getNombre());
+			System.out.println("Perfiles: "+usuario.getPerfiles());
+			
+			if(usuario.getPerfiles()!= null && usuario.getPerfiles().size()>0) {
+				for (Perfil p: usuario.getPerfiles()) {
+					System.out.println(p.getId() +" "+p.getPerfil());
+				}
+			}
+			
+		}else {
+			System.out.println("No se encontro el usuario");
+		}
+		
+		
+	}
+	
 	private void crearUsuarioConDosPerfiles() {
 		
 		Usuario usr = new Usuario();
 		usr.setNombre("alberto san martin");
-		usr.setEmail("alberto@sii.cl");
-		usr.setFecharegistro(new Date());
+		usr.setEmail("alberto@sii.cl");		
+		usr.setFechaRegistro(new Date());
 		usr.setUsername("altobert");
 		usr.setPassword("123456");
-		usr.setStatus(1);
+		usr.setEstatus(1);
 		
 		Perfil perfil1 = new Perfil();
 		perfil1.setId(1);
+		perfil1.setPerfil("Programador");
 		
 		Perfil perfil2 = new Perfil();
 		perfil2.setId(2);
+		perfil2.setPerfil("Enfermera");
 		
 		usr.agregar(perfil1);
 		usr.agregar(perfil2);
